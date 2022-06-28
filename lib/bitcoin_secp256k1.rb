@@ -1,11 +1,11 @@
 # -*- encoding : ascii-8bit -*-
-require 'secp256k1/version'
-require 'secp256k1/c'
-require 'secp256k1/utils'
-require 'secp256k1/ecdsa'
-require 'secp256k1/key'
+require 'bitcoin_secp256k1/version'
+require 'bitcoin_secp256k1/c'
+require 'bitcoin_secp256k1/utils'
+require 'bitcoin_secp256k1/ecdsa'
+require 'bitcoin_secp256k1/key'
 
-module Secp256k1
+module BitcoinSecp256k1
 
   EC_COMPRESSED = C::Constants['SECP256K1_EC_COMPRESSED'].to_i
   EC_UNCOMPRESSED = C::Constants['SECP256K1_EC_UNCOMPRESSED'].to_i

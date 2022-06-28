@@ -1,5 +1,5 @@
 # -*- encoding : ascii-8bit -*-
-module Secp256k1
+module BitcoinSecp256k1
   module Utils
 
     extend self

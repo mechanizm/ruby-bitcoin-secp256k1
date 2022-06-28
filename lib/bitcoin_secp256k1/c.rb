@@ -2,13 +2,13 @@
 require 'ffi'
 require 'ffi/tools/const_generator'
 
-module Secp256k1
+module BitcoinSecp256k1
   module C
     extend FFI::Library
 
     ffi_lib (ENV['LIBSECP256K1'] || 'libsecp256k1')
 
-    Constants = FFI::ConstGenerator.new('Secp256k1', required: true) do |gen|
+    Constants = FFI::ConstGenerator.new('BitcoinSecp256k1', required: true) do |gen|
       gen.include 'secp256k1.h'
 
       gen.const(:SECP256K1_EC_COMPRESSED)

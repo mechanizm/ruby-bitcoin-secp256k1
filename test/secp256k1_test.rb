@@ -3,20 +3,20 @@
 $:.unshift File.expand_path('../../lib', __FILE__)
 
 require 'minitest/autorun'
-require 'secp256k1'
+require 'bitcoin_secp256k1'
 
 require 'json'
 
-class MyECDSA < Secp256k1::BaseKey
-  include Secp256k1::Utils, Secp256k1::ECDSA
+class MyECDSA < BitcoinSecp256k1::BaseKey
+  include BitcoinSecp256k1::Utils, BitcoinSecp256k1::ECDSA
 
   def initialize
-    super(nil, Secp256k1::ALL_FLAGS)
+    super(nil, BitcoinSecp256k1::ALL_FLAGS)
   end
 end
 
-class Secp256k1Test < Minitest::Test
-  include Secp256k1
+class BitcoinSecp256k1Test < Minitest::Test
+  include BitcoinSecp256k1
 
   def test_ecdsa
     vec = ecdsa_sig['vectors']

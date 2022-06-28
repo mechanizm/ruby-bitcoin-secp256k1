@@ -2,7 +2,7 @@
 require 'digest'
 require 'securerandom'
 
-module Secp256k1
+module BitcoinSecp256k1
 
   class BaseKey
     def initialize(ctx, flags)
