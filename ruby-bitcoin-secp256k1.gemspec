@@ -3,11 +3,11 @@ $:.push File.expand_path("../lib", __FILE__)
 require 'bitcoin_secp256k1/version'
 
 Gem::Specification.new do |s|
-  s.name        = "bitcoin-secp256k1"
+  s.name        = "ruby-bitcoin-secp256k1"
   s.version     = BitcoinSecp256k1::VERSION
   s.authors     = ["Jan Xie"]
   s.email       = ["jan.h.xie@gmail.com"]
-  s.homepage    = "https://github.com/cryptape/ruby-bitcoin-secp256k1"
+  s.homepage    = "https://github.com/mechanizm/ruby-bitcoin-secp256k1"
   s.summary     = "Ruby binding to bitcoin's secp256k1 implementation."
   s.description = "Ruby binding to bitcoin's secp256k1 implementation."
   s.license     = 'MIT'

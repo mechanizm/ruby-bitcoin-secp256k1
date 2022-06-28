@@ -1,13 +1,13 @@
 PATH
   remote: .
   specs:
-    bitcoin-secp256k1 (0.5.2)
+    ruby-bitcoin-secp256k1 (0.5.2)
       ffi (>= 1.9.25)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    ffi (1.11.1)
+    ffi (1.15.5)
     minitest (5.11.3)
     rake (12.3.2)
     yard (0.9.20)
@@ -16,9 +16,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bitcoin-secp256k1!
   minitest (= 5.11.3)
   rake (~> 12.3)
+  ruby-bitcoin-secp256k1!
   yard (= 0.9.20)
 
 BUNDLED WITH
