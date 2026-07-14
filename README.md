@@ -1,3 +1,8 @@
+> [!WARNING]
+> **Archived legacy fork:** This fork is no longer maintained. It is preserved for
+> historical reference and is read-only. Do not use it for new projects; use it
+> at your own risk.
+
 # ruby-bitcoin-secp256k1
 
 ## Prerequisite
@@ -51,4 +56,3 @@ Check [test](test) for examples.
 ## LICENSE
 
 [MIT License](LICENSE)
-
